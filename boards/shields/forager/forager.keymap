@@ -1,3 +1,6 @@
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1100  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -155,9 +158,9 @@
         };
         mou {
             bindings = <
-            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_CLR_ALL                             &kp C_SLEEP     &none          &mmv MOVE_UP         &kp C_BRI_DN    &kp C_BRI_UP
-            &kp C_PP           &kp C_VOL_DN          &kp C_MUTE          &kp C_VOL_UP          &kp C_NEXT              &none          &mmv MOVE_LEFT      &mmv MOVE_DOWN       &mmv MOVE_RIGHT    &kp C_VOL_UP
-            &bootloader     &none          &none          &none          &kp                                           &none          &msc SCRL_LEFT          &msc SCRL_DOWN          &msc SCRL_UP          &msc SCRL_RIGHT
+            &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR_ALL                                      &kp C_SLEEP     &none             &mmv MOVE_UP         &kp C_BRI_DN     &kp C_BRI_UP
+            &kp C_PP        &kp C_VOL_DN   &kp C_MUTE     &kp C_VOL_UP   &kp C_NEXT                                           &none          &mmv MOVE_LEFT    &mmv MOVE_DOWN       &mmv MOVE_RIGHT  &kp C_VOL_UP
+            &bootloader     &none          &none          &none          &none                                                &none          &msc SCRL_LEFT    &msc SCRL_DOWN       &msc SCRL_UP     &msc SCRL_RIGHT
                                                                          &none          &tog BASE          &mkp  LCLK         &mkp RCLK
             >;
         };
