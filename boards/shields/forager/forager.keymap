@@ -86,17 +86,19 @@
             key-positions = <17 18>;
             bindings = <&sk LSHFT>;
             layers = <0>;
-        }
+        };
         combo_mouse {
             timeout-ms = <50>;
             key-positions = <3 4>;
             bindings = <&to MOU>;
             layers = <0>;
+        };
         combo_function {
             timeout-ms = <50>;
             key-positions = <5 6>;
             bindings = <&to FUN>;
             layers = <0>;
+        };
     };
 
     conditional_layers {
