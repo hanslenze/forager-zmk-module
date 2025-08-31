@@ -10,7 +10,7 @@
 #define BASE 0
 #define NAV  1
 #define SYM  2
-#define ADJ  3
+#define NUM  3
 #define MOU  4
 #define FUN  5
 
@@ -126,7 +126,7 @@
             &kp Q           &kp W          &kp E           &kp R           &kp T                                           &kp Y           &kp U         &kp I            &kp O           &kp P
             &kp A           &kp S          &kp D           &lhm LSHFT F    &kp G                                           &kp H           &rhm LSHFT J  &kp K            &kp L           &kp SQT
             &lhm LCTL Z     &lhm LALT X    &lhm LGUI C     &kp D           &kp V                                           &kp N           &kp M         &rhm LGUI COMMA  &rhm LALT DOT   &rhm LCTRL FSLH
-                                                                            &lt NAV BSPC   &lt MOU TAB    &lt SYM ENTER  &lt NAV SPACE
+                                                                            &lt NAV BSPC   &lt MOU TAB    &lt SYM ENTER  &lt NUM SPACE
             >;
         };
 
@@ -148,12 +148,12 @@
             >;
         };
 
-        adj {
+        num {
             bindings = <
-            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_CLR_ALL                                  &kp C_SLEEP     &none          &none          &kp C_BRI_DN    &kp C_BRI_UP
-            &studio_unlock  &none          &none          &none          &none                                          &none          &none          &none          &kp C_VOL_DN    &kp C_VOL_UP
-            &bootloader     &none          &none          &none          &none                                          &none          &none          &none          &none          &bootloader
-                                                                            &none          &none          &none          &none
+            &kp LBKT      &kp N7         &kp N8          &kp N9       &kp RBKT                                  &kp C_SLEEP     &none          &none                   &none             &none
+            &kp SEMI      &kp N4         &kp N5          &kp N6       &kp EQUAL                                 &kp PSCRN       &kp LC(V)      &kp LG(TAB)             &none             &none
+            &kp GRAVE     &kp N1         &kp N2          &kp N3       &kp PIPE                                  &tog 3          &kp LC(C)      &mt RGUI COMMA          &mt RALT DOT      &kp LCTL
+                                                                      &kp N0          &kp MINUS      &none      &tog 3
             >;
         };
         mou {
